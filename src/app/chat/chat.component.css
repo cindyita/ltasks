@@ -1,0 +1,43 @@
+.chatbox-container {
+    overflow-y: scroll;
+    height: 95%;
+}
+.chatbox-container {
+    padding:15px;
+}
+
+.chatbox-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.chatbox-container::-webkit-scrollbar:vertical {
+    width:7px;
+}
+
+.chatbox-container::-webkit-scrollbar-button:increment,.chatbox-container::-webkit-scrollbar-button {
+    display: none;
+} 
+
+
+.chatbox-container::-webkit-scrollbar-thumb {
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    border: 3px solid white;
+    border-right: 0;
+}
+
+.chatbox-container::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+.sendMsgChat input::placeholder,
+.sendMsgChat textarea::placeholder {
+    font-size: 9pt;
+}
+.sendMsgChat input,
+.sendMsgChat textarea {
+    padding:5px;
+}
+.btnSendMsgChat {
+    padding:3px;
+    font-size: 9pt;
+}

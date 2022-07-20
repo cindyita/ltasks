@@ -1,0 +1,56 @@
+
+<app-notes></app-notes>
+<app-archives-task></app-archives-task>
+
+<mat-drawer-container class="example-container h-100 w-100 d-none">
+  <mat-drawer-content>
+    <div class="p-4 p-lg-5 ms-0 ms-lg-5 me-0 me-lg-5">
+      <app-tasks></app-tasks>
+    </div>
+  </mat-drawer-content>
+  <mat-drawer mode="side" opened>
+    <app-sidebarmenu></app-sidebarmenu>
+  </mat-drawer>
+</mat-drawer-container>
+
+<app-header style="position: fixed;z-index:100;width:100%;"></app-header>
+
+<ng-container>
+  
+  <mat-sidenav-container class="example-container h-100" style="position:relative;">
+
+    <mat-sidenav position="end" #drawer mode="side" opened={{opened}} class="sidebar d-none d-lg-block">
+      <div class="mt-4 pt-5">
+        <app-sidebarmenu></app-sidebarmenu>
+      </div>
+    </mat-sidenav>
+    
+    <mat-sidenav-content class="pt-5 mt-3">
+
+      <div class="sidebar_toggler d-flex align-items-center justify-content-center d-none d-lg-flex" (click)="drawer.toggle();changeOpenedSidebar();">
+        <i class="fa-solid fa-bars"></i>
+        
+      </div>
+
+      <div class="tasks_container">
+       
+        <router-outlet></router-outlet>
+
+      </div>
+
+      <div class="chatMobileIcon d-flex d-lg-none" (click)="openChat()">
+        <i class="fa-solid fa-comment"></i>
+      </div>
+
+      <div class="chatMobile" [ngStyle]="{display: displayChatMobile}"> <!--[style.display]="displayChatMobile"-->
+        <div class="closeChat">
+          <i class="fa-solid fa-chevron-down" (click)="closeChat()"></i>
+        </div>
+        <app-chat></app-chat>
+      </div>
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+
+</ng-container>

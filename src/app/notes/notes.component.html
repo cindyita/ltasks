@@ -1,0 +1,83 @@
+<div class="offcanvas offcanvas-start" id="notes">
+
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title">
+        <br>
+        Actualizar base de datos: Notas
+      </h2>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <mat-divider></mat-divider><br>
+      
+      <div class="card card-default com-start">
+        <div class="card-header">
+          <span>Ariadna</span> <span class="com-hora text-muted ms-2">Hace 5 días</span>
+        </div>
+        <div class="card-body">
+          Hay un error en la línea 320
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card card-default com-end">
+        <div class="card-header">
+          <span class="com-hora text-muted me-2">Hace 2 horas</span>
+          <span>Cindyita</span> 
+        </div>
+        <div class="card-body">
+          Ya veo, ¿Puedes enviarme una imagen del error?
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card card-default com-start">
+        <div class="card-header">
+          <span>Ariadna</span> <span class="com-hora text-muted ms-2">Hace 2 segundos</span>
+        </div>
+        <div class="card-body">
+
+          Si claro ¡Aquí está!
+          <div class="attach">
+          <a class="text-info" type="button" style="text-decoration: none;color:inherit;" id="task1img1"><i class="fa-solid fa-images"></i> 1 imagen</a> 
+          </div>
+
+        </div>
+        
+      </div>
+      <br>
+      <hr><br>
+      <div class="com-form">
+        <form>
+          <textarea class="form-control" rows="3" id="comment" name="text" placeholder="Agrega una nota..."></textarea>
+
+          <div class="mt-1">
+            <button type="button" class="btn btn-light me-1" data-bs-toggle="collapse" data-bs-target="#addurl">Url</button>
+            <button type="button" class="btn btn-light" data-bs-toggle="collapse" data-bs-target="#addarchivo">Archivo</button>
+          </div>
+          
+
+          <div id="addurl" class="collapse">
+            <br>
+            <input class="form-control" type="url" name="comUrl" id="comUrl" placeholder="Agrega una url...">
+          </div>
+
+          <div id="addarchivo" class="collapse">
+            <br>
+            <input type="file" name="archive" id="archive">
+          </div>
+
+          <br>
+          <div class="text-center">
+            <button class="btn btn-info">Agregar</button>
+          </div>
+          
+        </form>
+      </div>
+
+      <br>
+     
+    </div>
+  </div>

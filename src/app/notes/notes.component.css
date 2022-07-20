@@ -1,0 +1,16 @@
+.thumbnail {
+    padding:0px;
+}
+.card {
+	position:relative;
+}
+.com-start {
+    margin-right:50px;
+}
+.com-end {
+    margin-left:50px;
+    text-align: right;
+}
+.com-hora {
+    font-size: 8pt;
+}
